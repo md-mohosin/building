@@ -11,7 +11,8 @@ header {
     padding-bottom: 100px;
 }
 
-.thought-works {
+.thought-works,
+.articels-section {
     background-color: #F4F4F4;
 }
 
@@ -26,7 +27,9 @@ p {
 nav,
 .banner,
 .thoughtfull,
-.progress,.work-process {
+.progress,
+.work-process,
+.articel-card {
     max-width: 1440px;
     width: 90%;
     margin: 0 auto;
@@ -119,17 +122,43 @@ nav {
     border-radius: 15px;
 }
 
-.work-process{
+.work-process {
     padding: 80px 0;
 }
 
-.work-text{
-    width: 50%;margin: 0 auto; text-align: center;
+.work-text {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
 }
 
-.work-card{
-    display: flex; justify-content: space-between; gap: 40px;
+.work-card {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
 }
+
+.articel-text {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.articel-card {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.card img {
+    width: 100%;
+}
+
 
 
 
@@ -182,22 +211,39 @@ nav {
         text-align: left;
     }
 
-     .progress {
-        grid-template-columns: repeat(2,1fr);
+    .progress {
+        grid-template-columns: repeat(2, 1fr);
         gap: 40px;
     }
 
     .work-text {
         width: 100%;
     }
-    
-    .work-card{
+
+    .work-card {
         flex-wrap: wrap;
     }
 
-    .work-card div{
+    .work-card div {
         flex: 45%;
     }
+
+    .articel-text {
+        width: 90%;
+    }
+
+    .articel-card {
+        flex-direction: column;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+        padding: 0px 20px;
+    }
+
 }
 
 
@@ -222,7 +268,7 @@ nav {
     } */
 
 
-    .heading{
+    .heading {
         font-size: 30px;
     }
 
@@ -258,15 +304,20 @@ nav {
     }
 
     .progress {
-        grid-template-columns: repeat(1,1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 40px;
     }
 
-     .work-text {
+    .work-text {
         width: 100%;
     }
 
-    .work-card div{
+    .work-card div {
         flex: 100%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
     }
 }
