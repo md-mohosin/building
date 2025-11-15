@@ -47,7 +47,7 @@ nav,
     gap: 20px;
 }
 
-nav ul {
+nav ul,footer ul {
     list-style-type: none;
     padding: 0;
     display: flex;
@@ -157,6 +157,12 @@ nav {
 
 .card img {
     width: 100%;
+}
+
+footer{
+    background-color: #1C1C1C;
+    color:white;
+    padding: 60px 0;
 }
 
 
@@ -319,5 +325,17 @@ nav {
     .card {
         display: flex;
         flex-direction: column;
+    }
+
+    footer ul{
+        flex-direction: column;
+    }
+    footer p{
+        width: 90%;
+    }
+
+    footer button{
+        width: 70%;
+        display: flex;justify-content: space-between;
     }
 }
