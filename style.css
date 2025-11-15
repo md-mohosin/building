@@ -294,6 +294,14 @@ footer {
         padding: 0px 20px;
     }
 
+    .card-img{
+        height: 160px;
+    }
+
+    .card img{
+        height: 100%;
+    }
+
     .discuss-text {
         width: 90%;
     }
